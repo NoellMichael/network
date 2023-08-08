@@ -54,6 +54,7 @@ void sender(){
             }
         }
     }
+}
     void receiver(){
         static int frexp=1;
         if(turn=='r'){
@@ -76,4 +77,4 @@ void sender(){
             }
         }
     }
-}
+
