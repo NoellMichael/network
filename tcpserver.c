@@ -55,7 +55,7 @@ int main(void){
         printf("message from client: %s\n",client_msg);
         printf("enter messgae: ");
         gets(server_msg);
-        if(send(client_sock, server_msg, strln(server_msg),0)<0){
+        if(send(client_sock, server_msg, strlen(server_msg),0)<0){
             printf("unable to send");
             return -1;
         }
